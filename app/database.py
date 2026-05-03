@@ -20,7 +20,7 @@ class Account(Base):
     bank = Column(String, nullable=False)          # Альфа, Сбер, Озон
     name = Column(String, nullable=False)           # "Текущий", "Зарплатный"
     account_number = Column(String, unique=True)    # 40817...
-    card_last4 = Column(String)                     # **** 9341
+    card_last4 = Column(String)                     # last 4 digits of card
     currency = Column(String, default="RUB")
     is_active = Column(Boolean, default=True)
     transactions = relationship("Transaction", back_populates="account")
