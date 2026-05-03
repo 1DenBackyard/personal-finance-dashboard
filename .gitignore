@@ -1,0 +1,55 @@
+# Финансовые данные - НИКОГДА не коммитить
+Выгрузки/
+app/finance.db
+app/finance.db-journal
+app/finance.db-wal
+app/finance.db-shm
+*.db
+*.sqlite
+*.sqlite3
+
+# Локальные секреты
+.env
+.env.local
+*.key
+secrets.json
+app/config.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Claude Code locals
+.claude/
+
+# Random binaries
+*.exe
+*.msi
